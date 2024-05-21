@@ -1,0 +1,365 @@
+body {
+    background-color: #232323;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+}
+
+.background {
+    background-color: #1E1E1E;
+    position: absolute;
+    top: 190px;
+    left: 0px;
+    width: 100%;
+    height: 81%;
+    border-radius: 50px 50px 0px 0px;
+}
+
+.wack-a-mole-black {
+    background-color: black;
+    width: 756px;
+    height: 122px;
+    z-index: 3;
+    position: absolute;
+    top: 45px;
+    left: 582px;
+    border-radius: 30px;
+}
+
+.wack-a-mole-gradient {
+    background: linear-gradient(270deg, #ff9900, #0500ff);
+    background-size: 400% 400%;
+    animation: gradient 3s ease infinite;
+    width: 790px;
+    height: 150px;
+    position: absolute;
+    top: 30px;
+    left: 565px;
+    z-index: 1;
+    border-radius: 30px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.wack-a-mole-text {
+    font-size: 69px;
+    position: absolute;
+    top: 65px;
+    left: 697px;
+    z-index: 4;
+}
+
+.score-black {
+    background-color: black;
+    width: 290px;
+    height: 90px;
+    z-index: 3;
+    position: absolute;
+    top: 60px;
+    left: 1495px;
+    border-radius: 30px;
+}
+
+.score-gradient {
+    background: rgb(255,153,0);
+    background: linear-gradient(90deg, rgba(255,153,0,1) 0%, rgba(5,0,255,1) 100%);
+    width: 320px;
+    height: 110px;
+    position: absolute;
+    top: 50px;
+    left: 1480px;
+    z-index: 1;
+    border-radius: 30px;
+}
+
+.scoreboard-text {
+    font-size: 48px;
+    position: absolute;
+    top: 80px;
+    left: 1520px;
+    z-index: 4;
+}
+
+.main-grid-black {
+    background-color: black;
+    width: 1400px;
+    height: 735px;
+    z-index: 2;
+    position: absolute;
+    top: 235px;
+    left: 260px;
+    border-radius: 30px;
+
+}
+
+.main-grid-gradient {    
+    background: rgb(255,153,0);
+    background: linear-gradient(90deg, rgba(255,153,0,1) 0%, rgba(5,0,255,1) 100%);
+    width: 1450px;
+    height: 780px;
+    position: absolute;
+    top: 215px;
+    left: 235px;
+    z-index: 1;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.hole-row-1 {
+    position: absolute;
+    top: 370px;
+}
+
+.hole-row-2 {
+    position: absolute;
+    top: 564px;
+}
+
+.hole-row-3 {
+    position: absolute;
+    top: 776px;
+}
+
+.hole-column-1 {
+    position: absolute;
+    left: 567px;
+}
+
+.hole-column-2 {
+    position: absolute;
+    left: 853px;
+}
+
+.hole-column-3 {
+    position: absolute;
+    left: 1140px;
+}
+
+.bonus_hole-column-1 {
+    position: absolute;
+    left: 280px;
+    display: none;
+}
+
+.bonus_hole-column-2 {
+    position: absolute;
+    left: 1410px;
+    display: none;
+}
+
+.freeze-button {
+    position: absolute;
+    top: 331px;
+    left: 62px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 25%;
+}
+
+.big-whack-button {
+    position: absolute;
+    top: 578px;
+    left: 26px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 25%;
+}
+
+.x2-score-button {
+    position: absolute;
+    top: 331px;
+    left: 1738px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 25%;
+}
+
+.bonus-hole-button {
+    position: absolute;
+    top: 578px;
+    left: 1746px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 25%;
+}
+
+.resign-button {
+    background: rgb(255,153,0);
+    background: linear-gradient(90deg, rgba(255,153,0,1) 0%, rgba(5,0,255,1) 100%);
+    width: 200px;
+    height: 120px;
+    position: absolute;
+    top: 850px;
+    left: 1705px;
+    z-index: 1;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.resign-button-background {
+    background-color: black;
+    width: 175px;
+    height: 95px;
+    z-index: 2;
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    border-radius: 30px;
+}
+
+.resign-button-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    position: absolute;
+    top: 43px;
+    left: 43px;
+    z-index: 3;
+}
+
+.good-mole {
+    cursor: pointer;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+    height: 200px;
+    transition: top 1s, height 0.5s;
+}
+
+.bad-mole {
+    cursor: pointer;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+    height: 200px;
+    transition: top 1s, height 0.5s;
+}
+
+.black-background {
+    position: absolute;
+    width: 1350px;
+    background-color: black;
+}
+
+.black-background-1 {
+    top: 420px;
+    left: 280px;
+    height: 200px;
+    z-index: 3;
+}
+
+.black-background-2 {
+    top: 610px;
+    left: 280px;
+    height: 200px;
+    z-index: 4;
+}
+
+.black-background-3 {
+    top: 820px;
+    left: 280px;
+    height: 145px;
+    z-index: 5;
+}
+
+#hole1, #hole2, #hole3, #bonus_hole1, #bonus_hole4 {
+    z-index: 8;
+    rotate: 180deg;
+}
+
+#hole4, #hole5, #hole6, #bonus_hole2, #bonus_hole5 {
+    z-index: 7;
+    rotate: 180deg;
+}
+
+#hole7, #hole8, #hole9, #bonus_hole3, #bonus_hole6 {
+    z-index: 6;
+    rotate: 180deg;
+}
+.game-over-black {
+    background-color: black;
+    width: 1400px;
+    height: 835px;
+    z-index: 10;
+    position: absolute;
+    top: 135px;
+    left: 260px;
+    border-radius: 30px;
+
+}
+
+.game-over-gradient {    
+    background: linear-gradient(270deg, #ff9900, #0500ff);
+    background-size: 400% 400%;
+    animation: gradient 3s ease infinite;
+    width: 1450px;
+    height: 880px;
+    position: absolute;
+    top: 115px;
+    left: 235px;
+    z-index: 9;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.restart-button {
+    background-color: transparent;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 96px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.game-over {
+    position: absolute;
+    top: 153px;
+    left: 717px;
+    z-index: 11;
+    text-decoration: underline;
+}
+
+.final-score {
+    position: absolute;
+    top: 430px;
+    left: 600px;
+    z-index: 11;
+}
+
+.continue {
+    position: absolute;
+    top: 800px;
+    left: 800px;
+    z-index: 11;
+    font-size: 36px;
+}

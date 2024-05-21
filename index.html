@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack-A-Mole</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="wack-a-mole-black"></div>
+    <div class="wack-a-mole-gradient"></div>
+    <div class="wack-a-mole-text">WHACK-A-MOLE</div>
+    <div class="score-black"></div>
+    <div class="score-gradient"></div>
+    <div class="scoreboard-text">SCORE : 0</div>
+    <div class="main-grid-black"></div>
+    <div class="main-grid-gradient"></div>
+    <img src="images/Hole1.png" class="hole-row-1 hole-column-1" id="hole1" draggable="false">
+    <img src="images/Hole2.png" class="hole-row-1 hole-column-2" id="hole2" draggable="false">
+    <img src="images/Hole3.png" class="hole-row-1 hole-column-3" id="hole3" draggable="false">
+    <img src="images/Hole4.png" class="hole-row-2 hole-column-1" id="hole4" draggable="false">
+    <img src="images/Hole5.png" class="hole-row-2 hole-column-2" id="hole5" draggable="false">
+    <img src="images/Hole6.png" class="hole-row-2 hole-column-3" id="hole6" draggable="false">
+    <img src="images/Hole7.png" class="hole-row-3 hole-column-1" id="hole7" draggable="false" >
+    <img src="images/Hole8.png" class="hole-row-3 hole-column-2" id="hole8" draggable="false">
+    <img src="images/Hole9.png" class="hole-row-3 hole-column-3" id="hole9" draggable="false">
+    <img src="images/BonusHole1.png" class="bonus_hole-column-1 hole-row-1" id="bonus_hole1" draggable="false">
+    <img src="images/BonusHole2.png" class="bonus_hole-column-2 hole-row-1" id="bonus_hole2" draggable="false">
+    <img src="images/BonusHole3.png" class="bonus_hole-column-1 hole-row-2" id="bonus_hole3" draggable="false">
+    <img src="images/BonusHole4.png" class="bonus_hole-column-2 hole-row-2" id="bonus_hole4" draggable="false">
+    <img src="images/BonusHole5.png" class="bonus_hole-column-1 hole-row-3" id="bonus_hole5" draggable="false">
+    <img src="images/BonusHole6.png" class="bonus_hole-column-2 hole-row-3" id="bonus_hole6" draggable="false">
+    <div class="black-background-1 black-background" id="blackbackground1"></div>
+    <div class="black-background-2 black-background" id="blackbackground2"></div>
+    <div class="black-background-3 black-background" id="blackbackground3"></div>
+    <button class="freeze-button" >
+        <img src="images/FREEZE.png" draggable="false">
+    </button>
+    <button class="big-whack-button">
+        <img src="images/BIG WACK.png" draggable="false">
+    </button>
+    <button class="x2-score-button" >
+        <img src="images/X2 SCORE.png" draggable="false">
+    </button> 
+    <button class="bonus-hole-button">
+        <img src="images/BONUS HOLE.png"  draggable="false">
+    </button>
+    <button class="resign-button" draggable="false">
+        <div class="resign-button-background" draggable="false"></div>
+        <div class="resign-button-text">RESIGN</div>
+    </button>
+    <div class="good-mole" id="goodMole" draggable="false">
+        <img src="images/Good Mole.png" draggable="false">
+    </div>
+    <div class="bad-mole" id="badMole" draggable="false">
+        <img src="images/Bad Mole.png" draggable="false">
+    </div>
+    <button class="restart-button">
+        <div class="game-over-black" style="display: none;"></div>
+        <div class="game-over-gradient" style="display: none;"></div> 
+        <div class="game-over" style="display: none;">GAME OVER</div>
+        <div class="final-score" style="display: none;">FINAL SCORE<br></div>
+        <div class="continue" style="display: none;">click here to play again</div>
+    </button>
+    <script src="script.js"></script>
+</body>
+</html>
